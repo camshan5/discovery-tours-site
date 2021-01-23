@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {{> partials/head title="Discovery Tours DC"}}
+    {{> partials/head title="Discovery Tours"}}
   </head>
   <body>
-    <!-- MODALS -->
-    {{> partials/modals}}
-
     <!-- NAVBAR -->
     {{> partials/navbar classList="navbar-light bg-white" container="container"
     button="primary"}}
 
     <div class="container"><div class="border-top"></div></div>
-    <!-- WELCOME -->
+
+    <!-- WHO IS DISCOVERY TOURS -->
     <section class="pt-4 pt-md-11">
       <div class="container">
         <div class="row align-items-center">
@@ -31,40 +29,42 @@
             <h1 class="display-3 text-center text-md-start">
               Who is Discovery Tours?
             </h1>
-
             <!-- Text -->
             <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
               With <span id="years-in-business"></span> years of experience, we
               specialize in providing elementary school students the educational
               adventure of a lifetime.
             </p>
-
             <!-- Buttons -->
             <div class="text-center text-md-start">
-              <a href="#" class="btn btn-primary shadow lift me-1">
+              <a
+                href="{{webRoot}}/tour-dates.html"
+                class="btn btn-primary shadow lift me-1"
+              >
                 Travel Dates
                 <i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
               </a>
-              <a href="#" class="btn btn-primary-soft lift"> Learn More </a>
+              <a
+                href="{{webRoot}}/tour-package.html"
+                class="btn btn-primary-soft lift"
+              >
+                Learn More
+              </a>
             </div>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
-    <!-- FEATURES -->
+    <!-- WHAT WE DO -->
     <section class="py-8 py-md-11 border-bottom">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
             <!-- Icon -->
             <div class="icon text-primary mb-3">{{> map/compass}}</div>
-
             <!-- Heading -->
             <h3>What We Do</h3>
-
             <!-- Text -->
             <p class="text-muted mb-6 mb-md-0">
               Discovery Tours has been taking elementary school students to our
@@ -89,10 +89,8 @@
           <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
             <!-- Icon -->
             <div class="icon text-primary mb-3">{{> communication/group}}</div>
-
             <!-- Heading -->
             <h3>8:1 Student / Chaperone Ratio</h3>
-
             <!-- Text -->
             <p class="text-muted mb-0">
               Chaperones come from the student's home school with many returning
@@ -102,99 +100,11 @@
             </p>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
-    <!-- SITES -->
-    <section class="py-6 py-md-8 border-bottom">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div
-            class="flickity-viewport-visible"
-            data-flickity='{"imagesLoaded": true, "initialIndex": 6, "pageDots": false, "prevNextButtons": false, "contain": true}'
-          >
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/roosevelt-memorial}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/si-logo}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/archives-logo}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/anc-logo}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/jefferson-memorial}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/mtvernon-logo}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/roosevelt-memorial}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/si-logo}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/archives-logo}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/anc-logo}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/jefferson-memorial}}
-              </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-2 mb-4 mb-md-0">
-              <!-- Brand -->
-              <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim">
-                {{> logotype/mtvernon-logo}}
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- / .row -->
-      </div>
-      <!-- / .container -->
-    </section>
+    <!-- LOGOS WRAP -->
+    <section class="py-6 py-md-8 border-bottom">{{> sections/logos }}</section>
 
     <!-- ABOUT -->
     <section class="pt-8 pt-md-11 bg-gradient-light-white">
@@ -212,14 +122,12 @@
                 ></span
               ></span>
             </h2>
-
             <!-- Text -->
             <p class="fs-lg text-muted mb-6">
               Traveling with us means we have you covered. From the hotel
               accommodations to ground transportation, we have worked out all
               details.
             </p>
-
             <!-- List -->
             <div class="row">
               <div class="col-12 col-lg-6">
@@ -231,11 +139,9 @@
                   >
                     <i class="fe fe-check"></i>
                   </div>
-
                   <!-- Text -->
                   <p class="text-success">Round trip airfare</p>
                 </div>
-
                 <!-- Item -->
                 <div class="d-flex">
                   <!-- Check -->
@@ -244,10 +150,8 @@
                   >
                     <i class="fe fe-check"></i>
                   </div>
-
                   <p class="text-success">Rooms at Embassy Suites Hotel</p>
                 </div>
-
                 <!-- Item -->
                 <div class="d-flex">
                   <!-- Check -->
@@ -256,12 +160,10 @@
                   >
                     <i class="fe fe-check"></i>
                   </div>
-
                   <!-- Text -->
                   <p class="text-success mb-lg-0">Ground transportation</p>
                 </div>
               </div>
-
               <div class="col-12 col-lg-6 mb-6 mb-md-0">
                 <!-- Item -->
                 <div class="d-flex">
@@ -271,11 +173,9 @@
                   >
                     <i class="fe fe-check"></i>
                   </span>
-
                   <!-- Text -->
                   <p class="text-success">All meals & gratuities</p>
                 </div>
-
                 <!-- Item -->
                 <div class="d-flex">
                   <!-- Check -->
@@ -284,7 +184,6 @@
                   >
                     <i class="fe fe-check"></i>
                   </div>
-
                   <!-- Text -->
                   <p class="text-success">
                     All Admissions & fees for selected highlights
@@ -298,7 +197,6 @@
                   >
                     <i class="fe fe-check"></i>
                   </div>
-
                   <!-- Text -->
                   <p class="text-success mb-0">
                     Chaperoned at a 8:1 student: teacher ratio
@@ -306,7 +204,6 @@
                 </div>
               </div>
             </div>
-            <!-- / .row -->
           </div>
           <div
             class="col-12 col-md-6 col-lg-5 order-md-1"
@@ -319,102 +216,33 @@
               data-aos="fade-up"
               data-aos-delay="100"
             />
-            <!-- Card -->
           </div>
         </div>
-        <!-- / .row -->
-        <div class="row align-items-center">
-          <div class="col-12 col-md-7 col-lg-6" data-aos="fade-right">
-            <!-- Heading -->
-            <h2>
-              We have lots of experience <br />
-              <span class="text-primary">building Bootstrap themes</span>.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-6">
-              We've built well over a dozen Bootstrap themes and sold tens of
-              thousands of copies.
-            </p>
-
-            <!-- List -->
-            <div class="d-flex">
-              <!-- Icon -->
-              <div class="icon text-primary">{{> media/repeat}}</div>
-
-              <div class="ms-5">
-                <!-- Heading -->
-                <h4 class="mb-1">Bootstrap users since the beginning</h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6">
-                  We've been developing with Bootstrap since it was publicly
-                  released in 2011.
-                </p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <!-- Icon -->
-              <div class="icon text-primary">{{> code/code}}</div>
-
-              <div class="ms-5">
-                <!-- Heading -->
-                <h4 class="mb-1">Deep understanding of Bootstrap</h4>
-
-                <!-- Text -->
-                <p class="text-muted mb-6 mb-md-0">
-                  We've watched Bootstrap grow up over the years and understand
-                  it better than almost anyone.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-5 col-lg-6">
-            <div
-              class="w-md-150 w-lg-130 position-relative"
-              data-aos="fade-left"
-            >
-              <!-- Shape -->
-              <div
-                class="shape shape-fluid-y shape-blur-4 svg-shim text-gray-200"
-              >
-                {{> blurs/blur-4}}
-              </div>
-
-              <!-- Image -->
-              <div class="img-skewed img-skewed-start">
-                <!-- Image -->
-                <img
-                  src="assets/img/screenshots/desktop/dashkit.jpg"
-                  class="screenshot img-fluid img-skewed-item"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="pt-10 pt-md-12">
+    <div class="container"><div class="border-top border-gray-300"></div></div>
+
+    <!-- TOUR HIGHLIGHTS -->
+    <section class="pt-8 pt-md-11">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             <!-- Heading -->
-            <h2>Our customers are our biggest fans.</h2>
-
+            <h2>You're here to go places. We're here to help.</h2>
             <!-- Text -->
             <p class="fs-lg text-muted mb-7 mb-md-9">
-              We don't like to brag, but we don't mind letting our customers do
-              it for us. Here are a few nice things folks have said about our
-              themes over the years.
+              Over the course of your trip, our team of D.C. pros are here to
+              ensure you get the best experience possible. Here are just a few
+              of the 15 to 20 sites you have an opportunity to experience.
+              <a
+                class="lead text-success"
+                href="{{webRoot}}/tour-highlights.html"
+                >See more <i class="fe fe-arrow-right"></i
+              ></a>
             </p>
           </div>
         </div>
-        <!-- / .row -->
         <div class="row">
           <div class="col-12">
             <!-- Card -->
@@ -429,33 +257,63 @@
                     <a
                       class="card-img-start w-100 bg-cover"
                       style="
-                        background-image: url(assets/img/photos/photo-1.jpg);
+                        background-image: url(assets/img/photos/us-capitol.webp);
                       "
                       href="#!"
                     >
                       <!-- Image (placeholder) -->
                       <img
-                        src="assets/img/photos/photo-1.jpg"
+                        src="assets/img/photos/us-capitol.webp"
                         alt="..."
                         class="img-fluid d-md-none invisible"
                       />
                     </a>
+
                     <a
                       class="card-img-start w-100 bg-cover"
                       style="
-                        background-image: url(assets/img/photos/photo-26.jpg);
+                        background-image: url(assets/img/photos/lincoln-memorial.webp);
                       "
                       href="#!"
                     >
                       <!-- Image (placeholder) -->
                       <img
-                        src="assets/img/photos/photo-26.jpg"
+                        src="assets/img/photos/lincoln-memorial.webp"
+                        alt="..."
+                        class="img-fluid d-md-none invisible"
+                      />
+                    </a>
+
+                    <a
+                      class="card-img-start w-100 bg-cover"
+                      style="
+                        background-image: url(assets/img/photos/national-archives.webp);
+                      "
+                      href="#!"
+                    >
+                      <!-- Image (placeholder) -->
+                      <img
+                        src="assets/img/photos/national-archives.webp"
+                        alt="..."
+                        class="img-fluid d-md-none invisible"
+                      />
+                    </a>
+
+                    <a
+                      class="card-img-start w-100 bg-cover"
+                      style="
+                        background-image: url(assets/img/photos/arlington-national-cemetery.webp);
+                      "
+                      href="#!"
+                    >
+                      <!-- Image (placeholder) -->
+                      <img
+                        src="assets/img/photos/arlington-national-cemetery.webp"
                         alt="..."
                         class="img-fluid d-md-none invisible"
                       />
                     </a>
                   </div>
-
                   <!-- Shape -->
                   <div
                     class="shape shape-end shape-fluid-y svg-shim text-white d-none d-md-block"
@@ -477,31 +335,78 @@
                           <!-- Brand -->
                           <div class="row justify-content-center mb-5 mb-md-7">
                             <div class="col-6 col-sm-4 col-md-7 col-lg-5">
-                              <!-- Logo -->
-                              <div
-                                class="img-fluid svg-shim"
-                                style="color: #ff5a5f"
-                              >
-                                {{> logotype/airbnb}}
+                              <div class="h3 text-primary">
+                                The U.S. Capitol
                               </div>
                             </div>
                           </div>
-                          <!-- / .row -->
 
                           <!-- Text -->
                           <p class="mb-5 mb-md-7">
-                            “Landkit is hands down the most useful front end
-                            Bootstrap theme I've ever used. I can't wait to use
-                            it again for my next project.”
+                            Tour the rotunda and Statuary Hall. Find the whisper
+                            room in the Old Senate Chamber. Watch Congress if in
+                            session.
                           </p>
+                        </blockquote>
+                      </div>
+                    </div>
 
+                    <div class="w-100">
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+                              <div
+                                class="img-fluid svg-shim"
+                                style="color: #153f6f"
+                              >
+                                {{> logotype/lincoln-memorial}}
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            Lincoln sits in his chair and his eyes follow you as
+                            you read the Gettysburg Address.
+                          </p>
+                        </blockquote>
+                      </div>
+                    </div>
+
+                    <div class="w-100">
+                      <!-- Body -->
+                      <div class="card-body">
+                        <blockquote class="blockquote text-center mb-0">
+                          <!-- Brand -->
+                          <div class="row justify-content-center mb-5 mb-md-7">
+                            <div class="col-6 col-sm-4 col-md-7 col-lg-5">
+                              <div
+                                class="img-fluid svg-shim"
+                                style="color: #153f6f"
+                              >
+                                {{> logotype/archives-logo}}
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Text -->
+                          <p class="mb-5 mb-md-7">
+                            The home of the Declaration of Independence and the
+                            Constitution. Researchers pour through census and
+                            other government records.
+                          </p>
                           <!-- Footer -->
                           <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">Dave Gamache</span>
+                            <span class="h6 text-uppercase"
+                              >Its kind of a big deal</span
+                            >
                           </footer>
                         </blockquote>
                       </div>
                     </div>
+
                     <div class="w-100">
                       <!-- Body -->
                       <div class="card-body">
@@ -512,38 +417,29 @@
                               <!-- Logo -->
                               <div
                                 class="img-fluid svg-shim"
-                                style="color: #3f5d87"
+                                style="color: #153f6f"
                               >
-                                {{> logotype/instagram}}
+                                {{> logotype/anc-logo}}
                               </div>
                             </div>
                           </div>
-                          <!-- / .row -->
-
                           <!-- Text -->
                           <p class="mb-5 mb-md-7">
-                            “I've never used a theme as versatile and flexible
-                            as Landkit. It's my go to for building landing sites
-                            on almost any project.”
+                            Watch the changing of the guard at the Tomb of the
+                            Unknown Soldier. See the eternal flame at JFK's
+                            grave site, Challenger and Columbia Memorials, and
+                            more.
                           </p>
-
-                          <!-- Footer -->
-                          <footer class="blockquote-footer">
-                            <span class="h6 text-uppercase">Russ D'Sa</span>
-                          </footer>
                         </blockquote>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- / .row -->
             </div>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
     <!-- SHAPE -->
@@ -553,88 +449,8 @@
       </div>
     </div>
 
-    <!-- STATS -->
-    <section class="pt-12 pt-md-13 bg-gray-200">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-lg-6 order-md-2">
-            <!-- Image -->
-            <img
-              src="assets/img/illustrations/illustration-8.png"
-              alt="..."
-              class="img-fluid mb-6 mb-md-0"
-            />
-          </div>
-          <div class="col-12 col-md-7 col-lg-6 order-md-1">
-            <!-- Heading -->
-            <h2>
-              Stay focused on your business. <br />
-              <span class="text-primary">Let us handle the design</span>.
-            </h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-gray-700 mb-6">
-              You have a business to run. Stop worring about cross-browser bugs,
-              designing new pages, keeping your components up to date. Let us do
-              that for you.
-            </p>
-
-            <!-- Stats -->
-            <div class="d-flex">
-              <div class="pe-5">
-                <h3 class="mb-0">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="100"
-                    data-aos
-                    data-aos-id="countup:in"
-                  ></span
-                  >%
-                </h3>
-                <p class="text-gray-700 mb-0">Satisfaction</p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="px-5">
-                <h3 class="mb-0">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="24"
-                    data-aos
-                    data-aos-id="countup:in"
-                  ></span
-                  >/
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="7"
-                    data-aos
-                    data-aos-id="countup:in"
-                  ></span>
-                </h3>
-                <p class="text-gray-700 mb-0">Support</p>
-              </div>
-              <div class="border-start border-gray-300"></div>
-              <div class="ps-5">
-                <h3 class="mb-0">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="100"
-                    data-aos
-                    data-aos-id="countup:in"
-                  ></span
-                  >k+
-                </h3>
-                <p class="text-gray-700 mb-0">Sales</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- / .row -->
-      </div>
-      <!-- / .container -->
-    </section>
-
     <!-- PRICING -->
-    <section class="pt-9 pt-md-12 bg-gray-200">
+    <section class="pt-10 pt-md-12 bg-gray-200">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -643,8 +459,9 @@
 
             <!-- Text -->
             <p class="lead text-gray-700">
-              All types of businesses need access to development resources, so
-              we give you the option to decide how much you need to use.
+              We understand the commitment a trip like this can be, so we 4
+              payable installments. Not sure what the future holds? We offer
+              rates that include a Trip Cancellation Plan.
             </p>
 
             <!-- Form -->
@@ -652,7 +469,7 @@
               class="d-flex align-items-center justify-content-center mb-7 mb-md-9"
             >
               <!-- Label -->
-              <span class="text-muted"> Annual </span>
+              <span class="text-muted"> Standard Package</span>
 
               <!-- Switch -->
               <div class="form-check form-switch mx-3">
@@ -666,11 +483,10 @@
               </div>
 
               <!-- Label -->
-              <span class="text-muted"> Monthly </span>
+              <span class="text-muted"> With Cancellation Plan </span>
             </form>
           </div>
         </div>
-        <!-- / .row -->
         <div class="row align-items-center gx-0">
           <div class="col-12 col-md-6">
             <!-- Card -->
@@ -686,7 +502,9 @@
                     <!-- Badge -->
                     <div class="text-center mb-5">
                       <span class="badge rounded-pill bg-primary-soft">
-                        <span class="h6 fw-bold text-uppercase">Standard</span>
+                        <span class="h6 fw-bold text-uppercase"
+                          >Tour Rates</span
+                        >
                       </span>
                     </div>
 
@@ -695,17 +513,24 @@
                       <span class="h2 mb-0 mt-2">$</span>
                       <span
                         class="price display-2 mb-0"
-                        data-annual="29"
-                        data-monthly="49"
-                        >29</span
+                        data-annual="330"
+                        data-monthly="380"
+                        >330</span
                       >
                       <span class="h2 align-self-end mb-1">/mo</span>
                     </div>
 
                     <!-- Text -->
-                    <p class="text-center text-muted mb-6 mb-md-8">per seat</p>
+                    <p class="text-center text-muted mb-4 mb-md-6">
+                      For 4 Months
+                    </p>
 
-                    <!-- Features -->
+                    <!-- Due Dates -->
+                    <div class="border-top"></div>
+                    <!-- Text -->
+                    <h3 class="text-center text-primary my-5">
+                      Payment Due Dates
+                    </h3>
                     <div class="d-flex">
                       <!-- Check -->
                       <div
@@ -713,9 +538,8 @@
                       >
                         <i class="fe fe-check"></i>
                       </div>
-
                       <!-- Text -->
-                      <p>Rich, responsive landing pages</p>
+                      <p>February 15, 2021</p>
                     </div>
                     <div class="d-flex">
                       <!-- Check -->
@@ -726,7 +550,7 @@
                       </div>
 
                       <!-- Text -->
-                      <p>100+ styled components</p>
+                      <p>March 15, 2021</p>
                     </div>
                     <div class="d-flex">
                       <!-- Check -->
@@ -737,7 +561,7 @@
                       </div>
 
                       <!-- Text -->
-                      <p>Flexible, simple license</p>
+                      <p>April 15, 2021</p>
                     </div>
                     <div class="d-flex">
                       <!-- Check -->
@@ -748,27 +572,18 @@
                       </div>
 
                       <!-- Text -->
-                      <p>Speedy build tooling</p>
-                    </div>
-                    <div class="d-flex">
-                      <!-- Check -->
-                      <div
-                        class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
-                      >
-                        <i class="fe fe-check"></i>
-                      </div>
-
-                      <!-- Text -->
-                      <p class="mb-0">6 months free support included</p>
+                      <p>May 15, 2021</p>
                     </div>
                   </div>
                 </div>
-                <!-- / .row -->
               </div>
 
               <!-- Button -->
-              <a href="#!" class="card-btn btn w-100 btn-lg btn-primary">
-                Get it now
+              <a
+                href="{{webRoot}}/tour-package.html"
+                class="card-btn btn w-100 btn-lg btn-primary"
+              >
+                Reserve your space!
               </a>
             </div>
           </div>
@@ -800,12 +615,11 @@
                     </p>
                   </div>
                 </div>
-                <!-- / .row -->
               </div>
 
               <!-- Button -->
               <a
-                href="#!"
+                href="{{webRoot}}/contact.html"
                 class="card-btn btn w-100 btn-lg btn-light bg-gray-300 text-gray-700"
               >
                 Contact us
@@ -813,9 +627,7 @@
             </div>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
     <!-- SHAPE -->
@@ -895,13 +707,11 @@
               <div class="badge badge-lg badge-rounded-circle bg-success">
                 <span>?</span>
               </div>
-
               <div class="ms-5">
                 <!-- Heading -->
                 <h4 class="text-white">
                   Does it work with Rails? React? Laravel?
                 </h4>
-
                 <!-- Text -->
                 <p class="text-muted mb-6 mb-md-0">
                   Yes. Landkit has basic CSS/JS files you can include. If you
@@ -912,9 +722,7 @@
             </div>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
     <!-- CTA -->
@@ -926,32 +734,27 @@
             <span class="badge rounded-pill bg-gray-700-soft mb-4">
               <span class="h6 fw-bold text-uppercase">Get started</span>
             </span>
-
             <!-- Heading -->
             <h1 class="display-4 text-white">
               Get Landkit and save your time.
             </h1>
-
             <!-- Text -->
             <p class="fs-lg text-muted mb-6 mb-md-8">
               Stop wasting time trying to do it the "right way" and build a site
               from scratch. Landkit is faster, easier, and you still have
               complete control.
             </p>
-
             <!-- Button -->
             <a
-              href="https://themes.getbootstrap.com/product/landkit/"
+              href="{{webRoot}}/tour-package.html"
               target="_blank"
               class="btn btn-success lift"
             >
-              Buy it now <i class="fe fe-arrow-right"></i>
+              Reserve Your Space <i class="fe fe-arrow-right"></i>
             </a>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
     <!-- SHAPE -->

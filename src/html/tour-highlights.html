@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Tour Highlights"}}
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light bg-white"
+    container="container"}}
+
+    <!-- WELCOME -->
+    <section
+      data-jarallax
+      data-speed=".8"
+      class="pt-12 pt-md-14 pb-12 pb-md-15 overlay overlay-black overlay-60 bg-cover jarallax"
+      style="
+        margin-top: -87px;
+        background-image: url(assets/img/covers/rain-in-dc.webp);
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+            <!-- Headin -->
+            <h1 class="display-2 fw-bold text-white">Your Trip.</h1>
+
+            <!-- Text -->
+            <p class="lead text-white-75 mb-6">
+              With 4 days of touring Washington D.C., you will have the chance
+              to visit the best this city has to offer. Here is a preview of
+              some of what you might see.
+            </p>
+
+            <!-- Badges -->
+            <nav class="nav justify-content-center">
+              <a
+                class="badge rounded-pill bg-white-soft active me-1 mb-1"
+                href="#"
+                data-bs-toggle="pill"
+                data-filter="*"
+                data-bs-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">All</span>
+              </a>
+
+              <a
+                class="badge rounded-pill bg-white-soft me-1 mb-1"
+                href="#"
+                data-bs-toggle="pill"
+                data-filter=".museum"
+                data-bs-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">Museums</span>
+              </a>
+
+              <a
+                class="badge rounded-pill bg-white-soft me-1 mb-1"
+                href="#"
+                data-bs-toggle="pill"
+                data-filter=".memorial"
+                data-bs-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">Memorials</span>
+              </a>
+
+              <a
+                class="badge rounded-pill bg-white-soft me-1 mb-1"
+                href="#"
+                data-bs-toggle="pill"
+                data-filter=".landmark"
+                data-bs-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">Landmarks</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <section class="py-8 py-md-11 mt-n12 mt-md-n14">
+      <div class="container">
+        <div
+          class="row"
+          id="portfolio"
+          data-isotope='{"layoutMode": "masonry"}'
+        >
+          <!-- World War II Memorial -->
+          <div class="col-12 col-md-4 memorial">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/wwii-memorial-2.webp"
+                  alt="..."
+                />
+              </div>
+              <!-- Overlay -->
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    World War II Memorial
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    Honors the more than 400,000 who died in WWII.
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- National Air & Space Museum -->
+          <div class="col-12 col-md-4 museum">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/fords-theater.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">Ford's Theater</h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    Sit in the theater seats as park rangers relive the day
+                    Lincoln was assassinated.
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- National Air & Space Museum -->
+          <div class="col-12 col-md-4 museum">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/neil-armstrong.webp"
+                  alt="..."
+                />
+              </div>
+              <!-- Overlay -->
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    National Air & Space Museum
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    Neil Armstrong’s spacesuit from the Apollo 11 Moon landing
+                    is on display for the first time in 13 years!
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Vietnam Veterans Memorial -->
+          <div class="col-12 col-md-4 memorial">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/vietnam-memorial.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    Vietnam Veterans Memorial
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    See the names of 58,318 Americans who gave their lives
+                    serving their country.
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Museum of Natural History -->
+          <div class="col-12 col-md-4 museum">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/natural-history.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    Museum of Natural History
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    Discover everything dinosaurs to the Hope diamond here.
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Korean War Memorial -->
+          <div class="col-12 col-md-4 memorial">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/korean-war.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    Korean War Memorial
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    Life size bronzes walk wearily from a battlefield depicting
+                    the hardship of war
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Washington Monument -->
+          <div class="col-12 col-md-4 landmark">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/washington-monument.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    Washington Monument
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    Take a ride in the glass elevator for a panoramic view of
+                    Washington.
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- White House -->
+          <div class="col-12 col-md-4 landmark">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/white-house.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">White House</h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0"></h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Library of Congress -->
+          <div class="col-12 col-md-4 landmark">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/library-of-congress.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    Library of Congress
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0"></h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Jefferson Memorial -->
+          <div class="col-12 col-md-4 memorial">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/jefferson-memorial.webp"
+                  alt="..."
+                />
+              </div>
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    Jefferson Memorial
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    Thomas Jeffierson stands in the rotunda surrounded by his
+                    famous writings.
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Supreme Court -->
+          <div class="col-12 col-md-4 landmark">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/supreme-court.webp"
+                  alt="..."
+                />
+              </div>
+              <!-- Overlay -->
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">Supreme Court</h6>
+
+                  <!-- Heading -->
+                  <h4 class="mb-0">
+                    The highest court in the land is an impressive landmark
+                    across the street from the capitol.
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- FDR Memorial -->
+          <div class="col-12 col-md-4 memorial">
+            <a class="card shadow-light-lg mb-7" href="#!">
+              <div class="card-zoom">
+                <img
+                  class="card-img"
+                  src="assets/img/portfolio/fdr-memorial.webp"
+                  alt="..."
+                />
+              </div>
+              <!-- Overlay -->
+              <div class="card-img-overlay card-img-overlay-hover">
+                <div class="card-body bg-white">
+                  <!-- Shape -->
+                  <div
+                    class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  >
+                    {{> curves/curve-1}}
+                  </div>
+                  <!-- Preheading -->
+                  <h6 class="text-uppercase mb-1 text-muted">
+                    Franklin Delano Roosevelt Memorial
+                  </h6>
+                  <!-- Heading -->
+                  <h4 class="mb-0"></h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-gray-200"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+  </body>
+</html>
