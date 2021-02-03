@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Tour Package"}}
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light bg-white"
+    container="container"}}
+
+    <!-- HEADER -->
+    <header class="bg-dark pt-9 pb-11 d-none d-md-block">
+      <div class="container-md">
+        <div class="row align-items-center">
+          <div class="col">
+            <!-- Heading -->
+            <h1 class="fw-bold text-white mb-2">Tour Package & Payment Info</h1>
+            <!-- Text -->
+            <p class="fs-lg text-white-75 mb-0">
+              Have Questions? Give Us A Call:
+              <span class="text-success">(281) 798-1889</span>
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="pb-8 pb-md-11 mt-md-n6">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <!-- Card -->
+            <div
+              class="card card-bleed border-bottom border-bottom-md-0 shadow-light-lg"
+            >
+              <!-- Collapse -->
+              <div class="collapse d-md-block" id="sidenavCollapse">
+                <div class="card-body">
+                  <!-- Heading -->
+                  <h6 class="fw-bold text-uppercase mb-3">Payment Dates</h6>
+
+                  <!-- List -->
+                  <ul class="card-list list text-gray-700 mb-6">
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        Feb 15, 2021
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        Mar 15, 2021
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        Apr 15, 2021
+                      </a>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-link text-reset" href="#!">
+                        May 15, 2021
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <!-- Heading -->
+                    <h4 class="mb-0">Total Trip Cost:</h4>
+                  </div>
+                  <div class="col-auto">
+                    <!-- Price -->
+                    <span class="h4 fw-bold"> $1,380.00 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- Header -->
+                <div class="row mb-5">
+                  <div class="col">
+                    <!-- Heading -->
+                    <h4 class="mb-0">Trip Cancellation Plan</h4>
+
+                    {{!--
+                    <!-- Text -->
+                    <small class="text-gray-700">
+                      Next payment due in <span class="days-to"></span> days
+                    </small>
+                    --}}
+                  </div>
+                  <div class="col-auto">
+                    <!-- Price -->
+                    <span class="h4 fw-bold"> $200.00 </span>
+                  </div>
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+                  <!-- Check -->
+                  <div
+                    class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    <small>Pay in Full or in 4 Equal Payments </small>
+                  </p>
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+                  <!-- Check -->
+                  <div
+                    class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    <small
+                      >Make Payments of $330 or $380 (with cancellation
+                      plan)</small
+                    >
+                  </p>
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+                  <!-- Check -->
+                  <div
+                    class="badge badge-rounded-circle bg-success-soft mt-1 me-4"
+                  >
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    <small
+                      >Payments can be made by check, money order or
+                      Venmo</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-bleed shadow-light-lg mb-6">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <!-- Heading -->
+                    <h4 class="mb-0">Payment Options</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Icon -->
+                        <img
+                          class="img-fluid"
+                          src="assets/img/icons/payment-methods/visa.svg"
+                          alt="..."
+                          style="max-width: 40px"
+                        />
+                      </div>
+                      <div class="col ms-n5">
+                        <!-- Heading -->
+                        <p class="mb-0">Check or Money Order</p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700"
+                          >Checks paid to: Discovery Tours, PO Box 23, League
+                          City, TX 77574</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Icon -->
+                        <img
+                          class="img-fluid"
+                          src="assets/img/icons/payment-methods/venmo.svg"
+                          alt="..."
+                          style="max-width: 40px"
+                        />
+                      </div>
+                      <div class="col ms-n5">
+                        <!-- Heading -->
+                        <p class="mb-0">Venmo</p>
+
+                        <!-- Text -->
+                        <small class="text-gray-700"> Mickey-Shannon </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </main>
+
+    <!-- CURVE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-dark"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+  </body>
+</html>

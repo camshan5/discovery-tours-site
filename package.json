@@ -1,6 +1,6 @@
 {
   "name": "discovery-tours-site",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Information site for Discovery Tours, LLC.",
   "scripts": {
     "start": "webpack-dev-server --open",
@@ -25,7 +25,6 @@
     "jarallax": "^1.12.5",
     "lightgallery.js": "^1.4.0",
     "npm": "^6.14.10",
-    "quill": "^1.3.7",
     "smooth-scroll": "^16.1.3",
     "typed.js": "^2.0.11"
   },
