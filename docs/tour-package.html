@@ -21,6 +21,77 @@
     <title>Tour Package</title>
   </head>
   <body>
+    <!-- MODALS -->
+    <!-- Example -->
+    <div
+      class="modal fade"
+      id="modalExample"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalExampleTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- Close -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+    
+            <!-- Image -->
+            <div class="text-center border-bottom">
+              <img
+                src="./assets/img/brand.svg"
+                alt="..."
+                class="img-fluid mb-2"
+                style="width: 200px"
+              />
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-0 mt-n5" id="modalExampleTitle">
+              Pay with
+              <img
+                class="img-fluid ms-n4"
+                src="assets/img/icons/payment-methods/venmo.svg"
+                alt="Venmo"
+                style="max-width: 150px"
+              />
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-2 mb-md-2 mt-n6">
+              Please include the child’s name and school in the memo line as well as
+              a contact number.
+            </p>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-8 align-self-center">
+                <!-- iPhone -->
+                <div class="device device-iphonex">
+                  <img
+                    src="assets/img/icons/payment-methods/venmo-dc.jpeg"
+                    class="device-screen"
+                    alt="..."
+                  />
+                  <img
+                    src="assets/img/devices/iphonex.svg"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
@@ -304,9 +375,9 @@
                         <!-- Icon -->
                         <img
                           class="img-fluid"
-                          src="assets/img/icons/payment-methods/visa.svg"
+                          src="assets/img/icons/payment-methods/check-book.svg"
                           alt="..."
-                          style="max-width: 40px"
+                          style="max-width: 80px"
                         />
                       </div>
                       <div class="col ms-n5">
@@ -315,7 +386,7 @@
 
                         <!-- Text -->
                         <small class="text-gray-700"
-                          >Checks paid to: Discovery Tours, PO Box 23, League
+                          ><b>Paid to:</b> Discovery Tours, PO Box 23, League
                           City, TX 77574</small
                         >
                       </div>
@@ -329,7 +400,7 @@
                           class="img-fluid"
                           src="assets/img/icons/payment-methods/venmo.svg"
                           alt="..."
-                          style="max-width: 40px"
+                          style="max-width: 80px"
                         />
                       </div>
                       <div class="col ms-n5">
@@ -337,7 +408,20 @@
                         <p class="mb-0">Venmo</p>
 
                         <!-- Text -->
-                        <small class="text-gray-700"> Mickey-Shannon </small>
+                        <small class="text-gray-700">
+                          Send payment to <b>@Mickey-Shannon</b> by searching
+                          directly on Venmo or scanning the QR Code <br />
+                        </small>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Button -->
+                        <button
+                          class="btn btn-xs btn-outline-white"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalExample"
+                        >
+                          Access QR Code
+                        </button>
                       </div>
                     </div>
                   </div>

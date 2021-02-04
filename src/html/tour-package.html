@@ -4,6 +4,9 @@
     {{> partials/head title="Tour Package"}}
   </head>
   <body>
+    <!-- MODALS -->
+    {{> partials/modals}}
+
     <!-- NAVBAR -->
     {{> partials/navbar classList="navbar-light bg-white"
     container="container"}}
@@ -176,9 +179,9 @@
                         <!-- Icon -->
                         <img
                           class="img-fluid"
-                          src="assets/img/icons/payment-methods/visa.svg"
+                          src="assets/img/icons/payment-methods/check-book.svg"
                           alt="..."
-                          style="max-width: 40px"
+                          style="max-width: 80px"
                         />
                       </div>
                       <div class="col ms-n5">
@@ -187,7 +190,7 @@
 
                         <!-- Text -->
                         <small class="text-gray-700"
-                          >Checks paid to: Discovery Tours, PO Box 23, League
+                          ><b>Paid to:</b> Discovery Tours, PO Box 23, League
                           City, TX 77574</small
                         >
                       </div>
@@ -201,7 +204,7 @@
                           class="img-fluid"
                           src="assets/img/icons/payment-methods/venmo.svg"
                           alt="..."
-                          style="max-width: 40px"
+                          style="max-width: 80px"
                         />
                       </div>
                       <div class="col ms-n5">
@@ -209,7 +212,20 @@
                         <p class="mb-0">Venmo</p>
 
                         <!-- Text -->
-                        <small class="text-gray-700"> Mickey-Shannon </small>
+                        <small class="text-gray-700">
+                          Send payment to <b>@Mickey-Shannon</b> by searching
+                          directly on Venmo or scanning the QR Code <br />
+                        </small>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Button -->
+                        <button
+                          class="btn btn-xs btn-outline-white"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalExample"
+                        >
+                          Access QR Code
+                        </button>
                       </div>
                     </div>
                   </div>
