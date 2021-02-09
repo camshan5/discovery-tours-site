@@ -20,9 +20,80 @@
     <!-- Title -->
     <title>Trip Dates</title>
   </head>
-  <body>
+  <body class="bg-light">
+    <!-- MODALS -->
+    <!-- Example -->
+    <div
+      class="modal fade"
+      id="modalExample"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalExampleTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- Close -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+    
+            <!-- Image -->
+            <div class="text-center border-bottom">
+              <img
+                src="./assets/img/brand.svg"
+                alt="..."
+                class="img-fluid mb-2"
+                style="width: 200px"
+              />
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-0 mt-n5" id="modalExampleTitle">
+              Pay with
+              <img
+                class="img-fluid ms-n4"
+                src="assets/img/icons/payment-methods/venmo.svg"
+                alt="Venmo"
+                style="max-width: 150px"
+              />
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-2 mb-md-2 mt-n6">
+              Please include the child’s name and school in the memo line as well as
+              a contact number.
+            </p>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-8 align-self-center">
+                <!-- iPhone -->
+                <div class="device device-iphonex">
+                  <img
+                    src="assets/img/icons/payment-methods/venmo-dc.jpeg"
+                    class="device-screen"
+                    alt="..."
+                  />
+                  <img
+                    src="assets/img/devices/iphonex.svg"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
       <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href=".">
@@ -87,7 +158,7 @@
                   <div class="col-12 col-lg-6">
                     <div
                       class="dropdown-img-start"
-                      style="background-image: url(./assets/img/photos/dc-city.webp);"
+                      style="background-image: url(./assets/img/photos/dc-city.jpg);"
                     >
                       <h4 class="fw-bold text-white mb-4 text-center">
                         Want more information?
@@ -142,12 +213,93 @@
       </div>
     </nav>
 
-    <div class="container">
-      <h1 class="py-12">Page Coming Soon!</h1>
+    <!-- CONTENT -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-14">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+            <!-- Heading -->
+            <h1 class="display-4 mb-2">Tour Dates</h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-gray-700 mb-md-0">Updated 2/08/2021</p>
+          </div>
+        </div>
+        <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+            <!-- Divider -->
+            <hr class="my-6 my-md-8" />
+          </div>
+        </div>
+        <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <!-- Heading -->
+            <h3 class="mb-5">Final schedule coming soon!</h3>
+
+            <!-- Text -->
+            <p class="text-gray-800">
+              The trip is scheduled for Sunday, May 30 through Wednesday , June
+              2 or Monday, May 31 through Thursday, June 3. Check back here soon
+              for the final details.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <!-- Card -->
+            <div class="card shadow-light-lg">
+              <div class="card-body">
+                <!-- Heading -->
+                <h4>Have a question?</h4>
+
+                <!-- Text -->
+                <p class="fs-sm text-gray-800 mb-5">
+                  Not sure exactly what you are looking for or just want
+                  clarification? We’d be happy to clear things up.
+                </p>
+
+                <!-- Heading -->
+                <h6 class="fw-bold text-uppercase text-gray-700 mb-2">
+                  Call anytime
+                </h6>
+
+                <!-- Text -->
+                <p class="fs-sm mb-5">
+                  <a href="tel:281-798-1889" class="text-reset"
+                    >(281) 798-1889</a
+                  >
+                </p>
+
+                <!-- Heading -->
+                <h6 class="fw-bold text-uppercase text-gray-700 mb-2">
+                  Email us
+                </h6>
+
+                <!-- Text -->
+                <p class="fs-sm mb-0">
+                  <a
+                    href="mailto:mshannon@discoverytoursdc.com"
+                    class="text-reset"
+                    >mshannon@discoverytoursdc.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
     </div>
 
     <!-- FOOTER -->
-    <footer class="py-8 py-md-11 bg-gray-200">
+    <footer class="py-8 py-md-11 bg-dark">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3">
@@ -159,77 +311,69 @@
             />
     
             <!-- Text -->
-            <p class="text-gray-700 mb-2">A better way to learn.</p>
-    
-            <!-- Social -->
-            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img
-                    src="./assets/img/icons/social/instagram.svg"
-                    class="list-social-icon"
-                    alt="..."
-                  />
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img
-                    src="./assets/img/icons/social/facebook.svg"
-                    class="list-social-icon"
-                    alt="..."
-                  />
-                </a>
-              </li>
-              <li class="list-inline-item list-social-item me-3">
-                <a href="#!" class="text-decoration-none">
-                  <img
-                    src="./assets/img/icons/social/twitter.svg"
-                    class="list-social-icon"
-                    alt="..."
-                  />
-                </a>
-              </li>
-            </ul>
+            <p class="text-gray-700 mb-6">
+              © 2021 DiscoveryToursDC.com <br />
+              All Rights Reserved.
+            </p>
           </div>
-          <div class="col-6 col-md-4 col-lg-2"></div>
           <div class="col-6 col-md-4 col-lg-2">
             <!-- Heading -->
-            <h6 class="fw-bold text-uppercase text-gray-700">Products</h6>
+            <h6 class="fw-bold text-uppercase text-gray-700">Trip Information</h6>
     
             <!-- List -->
             <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
-                <a href="#!" class="text-reset"> Page Builder </a>
+                <a href="./tour-package.html" class="text-reset">
+                  Pricing
+                </a>
               </li>
-            </ul>
-          </div>
-    
-          <div class="col-6 col-md-4 col-lg-2">
-            <!-- Heading -->
-            <h6 class="fw-bold text-uppercase text-gray-700">Services</h6>
-    
-            <!-- List -->
-            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
               <li class="mb-3">
-                <a href="#!" class="text-reset"> Documentation </a>
+                <a href="./school-meetings.html" class="text-reset">
+                  School Meetings
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="./tour-dates.html" class="text-reset">
+                  Travel Dates
+                </a>
               </li>
             </ul>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <!-- Heading -->
-            <h6 class="fw-bold text-uppercase text-gray-700">Legal</h6>
+            <h6 class="fw-bold text-uppercase text-gray-700">Connect</h6>
     
             <!-- List -->
             <ul class="list-unstyled text-muted mb-0">
               <li class="mb-3">
-                <a href="#!" class="text-reset"> Documentation </a>
+                <a href="./contact.html" class="text-reset">
+                  Contact Us</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="./about.html" class="text-reset">
+                  About the Team
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-4 col-lg-2">
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">Legal</h6>
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="./terms-of-service.html" class="text-reset">
+                  Terms of Service
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+
     <!-- JAVASCRIPT -->
     <!-- Vendor JS -->
     <script src="./assets/js/vendor.bundle.js"></script>
