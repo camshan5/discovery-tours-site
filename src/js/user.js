@@ -48,4 +48,6 @@ const daysTo = () => {
 
 // document.querySelector(".days-to").innerHTML = daysTo()
 
-document.querySelector("#years-in-business").innerHTML = yearsInBusiness(1983)
+document.querySelector("#years-in-business").innerHTML = yearsInBusiness(
+  1983 - 1
+) // - 1 to include year 0 as 1.

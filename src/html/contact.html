@@ -84,7 +84,7 @@
               href="mailto:mshannon@discoverytoursdc.com?subject=Question Regarding the Washington D.C. Trip"
               class="h4"
             >
-              support@discoverytoursdc.com
+              mshannon@discoverytoursdc.com
             </a>
           </div>
         </div>
@@ -110,8 +110,8 @@
         <!-- / .row -->
         <div class="row justify-content-center">
           <div class="col-12 col-md-12 col-lg-10">
-            <!-- Form -->
-            <form>
+            <!-- Form - Using Formspree.io -->
+            <form action="https://formspree.io/f/mbjqqwkl" method="POST">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="form-group mb-5">
@@ -126,7 +126,6 @@
                       id="contactName"
                       type="text"
                       placeholder="Full name"
-                      disabled
                     />
                   </div>
                 </div>
@@ -141,7 +140,7 @@
                       id="contactEmail"
                       type="email"
                       placeholder="hello@gmail.com"
-                      disabled
+                      name="_replyto"
                     />
                   </div>
                 </div>
@@ -159,9 +158,9 @@
                     <textarea
                       class="form-control"
                       id="contactMessage"
+                      name="message"
                       rows="5"
                       placeholder="Tell us what we can help you with!"
-                      disabled
                     ></textarea>
                   </div>
                 </div>
@@ -170,7 +169,7 @@
               <div class="row justify-content-center">
                 <div class="col-auto">
                   <!-- Submit -->
-                  <button type="submit" class="btn btn-primary lift" disabled>
+                  <button type="submit" class="btn btn-primary lift">
                     Send message
                   </button>
                 </div>
