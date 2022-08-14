@@ -4,3 +4,6 @@
 debug.log
 dist/
 node_modules/
+
+# Jetbrais Settings
+/.idea/
