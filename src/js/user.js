@@ -48,6 +48,14 @@ const daysTo = () => {
 
 // document.querySelector(".days-to").innerHTML = daysTo()
 
+// - 1 to include year 0 as 1
 document.querySelector("#years-in-business").innerHTML = yearsInBusiness(
   1983 - 1
-) // - 1 to include year 0 as 1.
+)
+
+const currentYear = () => {
+  let dateNow = Date.now()
+  return new Date(dateNow).getFullYear()
+}
+
+document.querySelector("#current-year").innerHTML = currentYear()
