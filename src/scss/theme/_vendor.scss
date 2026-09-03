@@ -1,4 +1,38 @@
-@import "vendor/aos";
-@import "vendor/feather";
-@import "vendor/flickity";
-@import "vendor/highlight";
+@font-face {
+  font-family: "Feather";
+  src: url("../fonts/Feather/Feather.woff") format("woff"),
+    url("../fonts/Feather/Feather.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fe {
+  display: inline-block;
+  font-family: "Feather";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-rendering: auto;
+  text-transform: none;
+}
+
+.fe-alert-triangle::before {
+  content: "\e904";
+}
+
+.fe-arrow-down::before {
+  content: "\e90c";
+}
+
+.fe-arrow-right::before {
+  content: "\e912";
+}
+
+.fe-check::before {
+  content: "\e92b";
+}
+
+.fe-x::before {
+  content: "\ea02";
+}

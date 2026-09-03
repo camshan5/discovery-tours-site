@@ -3,30 +3,17 @@
 // Theme module
 //
 
-const modals = document.querySelectorAll('.modal');
-
-function getScrollbarWidth() {
-  return window.innerWidth - document.documentElement.clientWidth;
-}
+const modals = document.querySelectorAll(".modal");
 
 function overflowHide() {
-  const scrollbarWidth = getScrollbarWidth();
-
-  document.documentElement.style.overflow = 'hidden';
-  document.body.style.paddingRight = scrollbarWidth + 'px';
+  document.documentElement.style.overflowX = "visible";
 }
 
 function overflowShow() {
-  document.documentElement.style.overflow = '';
-  document.body.style.paddingRight = '';
+  document.documentElement.style.overflowX = "";
 }
 
-modals.forEach(function(modal) {
-  modal.addEventListener('show.bs.modal', function() {
-    overflowHide();
-  });
-
-  modal.addEventListener('hidden.bs.modal', function() {
-    overflowShow();
-  });
+modals.forEach((modal) => {
+  modal.addEventListener("show.bs.modal", overflowHide);
+  modal.addEventListener("hidden.bs.modal", overflowShow);
 });
